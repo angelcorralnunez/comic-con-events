@@ -91,12 +91,20 @@ footer .bi:hover {
 
 }
 
+#desc-txt {
+    color: #3C1361;
+}
+
+.li-txt {
+    color: #3C1361;
+}
+
 .checklist {
     list-style-type: none;
 }
 
 .checklist>li i {
-    color: var(--acn-primary-color); 
+    color: #0F4240; 
     padding-right: .5rem;
 }
 
@@ -110,9 +118,14 @@ footer .bi:hover {
     border-radius: 30px;
 }
 
+.appLogo2 {
+    max-width: 450px;
+    border-radius: 30px;
+}
+
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px)
 
-#app-logo-img {
+.app-logo-img {
     max-width: 400px;
 }
