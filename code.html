@@ -37,10 +37,10 @@
                     <span class="ms-4 ms-md-3 fs-2">FantasyCon</span>
                 </a>
                 <!-- Mobile hamburger menu button -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                <button class="navbar-toggler border border-light border-4" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="text-info">
+                    <span class="text-light">
                         <i class="bi bi-list"></i>
                     </span>
                 </button>
@@ -71,7 +71,7 @@
     </header>
 
     <main class="container mt-3">
-        <h1 id="code-title" class="display-5 border-bottom border-2 border-info fw-bold mb-3 mb-md-4">The Code</h1>
+        <h1 id="code-title" class="display-5 border-bottom border-2 border-dark fw-bold mb-3 mb-md-4">The Code</h1>
         <h2 class="lead fw-bold">See the example code block below for the actual Javascript code used to build this app.</h2>
         <div class="row">
             <div class="col-12 col-lg-8">
@@ -458,15 +458,15 @@ buildDropDown();
 }
                     </code>
                 </pre>
-            </div>
-            <div class="col-12 col-lg-4">
+            </div> 
+            <div id="write-up-txt" class="col-12 col-lg-4 fw-bold fs-5">
                 <p>The code is structured in seven functions. The first 65 lines that comprise of the events variable, are just text that we put into the table so we don't have to put a bunch in manually. <hr/>The first function, buildDropDown, is responsible for building the dropdown menu for specific cities, instead of listing every city that was input by the user. <hr/>The second function, displayEventData, is responsible for displaying the event data of the events input by the user. This function creates a table and template for the user input events. The function then pulls the data from the text the user input, and assigns it values. It then displays the values on the table, using the template it made. <hr/>The third function calculates the various attendance stats that will be displayed in a later function. These values are taken from the currentAttendance value, and are then used in various statements to calculate the stats. They are then assigned values, and returned. <hr/>The fourth function displays those stats by pulling those values and inserting them into the table with the user's preferred structure. <hr/>The next function is tasked with getting the event data and presenting it in a readable manner. The function gets data from the local storage the user created, and then transforms it into strings from the original object that it was. This data is then returned since it now usable for us. <hr/>The next function has to filter through the events and only pick unique cities to display their respective attendance numbers. It gets all of the event data first, and then checks what the dropdown menu name is. The user then picks what city data they want, and the function filters through the events, picking unique cities but collecting the data from those same cities. It then displays the data from that city. <hr/>The final function allows the user to add a new event to the event table. It assigns strings to the user input values, and inserts this data into a new event object. This object is then put into the events variable and combined with the previous event array. This is all stored into the users local storage, so that it doesn't disappear if the user exits or refreshes the page. Finally, it calls the buildDropDown function again, since a new event has been given.</p>
             </div>
         </div>
     </main>
 </body>
 
-<footer class="py-3">
+<footer class="py-3 mt-5">
     <div class="container">
         <div class="row row-cols-1 row-cols-lg-3 align-items-center">
             <div class="col text-center text-lg-start">
